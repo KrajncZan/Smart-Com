@@ -1,0 +1,3 @@
+## **Docker**
+
+Docker je programska platforma, ki vam omogoča hitro gradnjo, testiranje in uvajanje aplikacij. Docker pakira programsko opremo v standardizirane enote, imenovane vsebniki, ki imajo vse, kar programska oprema potrebuje za delovanje, vključno s knjižnicami, sistemskimi orodji, kodo in izvajalnim časom. Z Dockerjem lahko hitro uvedete in razširite aplikacije v katero koli okolje in veste, da se bo vaša koda izvajala.
