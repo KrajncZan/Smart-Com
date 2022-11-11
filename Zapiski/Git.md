@@ -18,3 +18,5 @@ Git je brezpla훾na in odprtokodna programska oprema za porazdeljen nadzor razli�
 To je postopek premikanja ali zdru탑evanja zaporedja commitov v novi base commit. Rebasing je najbolj uporabno in enostavno vizualiziran v kontekstu branchov. Proces si lahko tako:
 
 <img src="Slike/Git_rebasing.png" width="600" alt="Kako deluje rebase">
+
+Z vidika vsebine je rebasing spreminjanje baze brancha iz enega commita v drugega, zaradi 훾esar je videti, kot da smo svoj branch ustvarili iz druge objave. Interno Git to dose탑e tako, da ustvari nove commite in jih uporabi za navedeno bazo. Zelo pomembno je razumeti, da 훾eprav veja izgleda enako, je sestavljena iz povsem novih potrditev.
