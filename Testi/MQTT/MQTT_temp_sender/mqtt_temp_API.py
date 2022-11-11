@@ -27,4 +27,4 @@ while True:
     #print(temp)
     client.publish("TEMPERATURE", temp)
     print("Just published " + str(temp) + " to topic TEMPERATURE")
-    time.sleep(1)
+    time.sleep(2)

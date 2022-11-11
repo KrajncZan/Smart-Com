@@ -7,7 +7,7 @@ sez = []
 def sendMail(temp):
     passw = "vdaxsnsqsglbivjq"
     user = 'zan.krajnc.kr@gmail.com'
-    to = "boris.krajnc@gmail.com"
+    to = "zkrajnc@smart-com.si"
     subject = 'Temperatura v Lj'
     content = f"Trenutna temperatura v Ljubljani je {round(temp, 2)}°C"
 
@@ -33,7 +33,7 @@ client.loop_start()
 client.subscribe("TEMPERATURE")
 client.on_message=on_message 
 
-time.sleep(10)
+time.sleep(20)
 client.loop_stop()
 
 temp = sum(sez) / len(sez)
