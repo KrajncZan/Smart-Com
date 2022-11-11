@@ -2,10 +2,11 @@ import paho.mqtt.client as mqtt
 from random import randrange, uniform
 import time
 
-mqttBroker ="mqtt.eclipseprojects.io" 
+mqttBroker = "localhost" 
+port = 1883
 
 client = mqtt.Client("Temperature_Inside")
-client.connect(mqttBroker)
+client.connect(mqttBroker, port)
 
 while True:
     randNumber = round(uniform(19, 21), 2)
