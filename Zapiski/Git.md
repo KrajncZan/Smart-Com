@@ -13,5 +13,8 @@ Git je brezplačna in odprtokodna programska oprema za porazdeljen nadzor razli�
 - ## **Fleksibilnost**
     Eden od Gitovih ključnih načrtovalskih ciljev je Fleksibilnost. Git je prilagodljiv v več pogledih: v podpori za različne vrste nelinearnih razvojnih delovnih tokov, v svoji učinkovitosti tako pri majhnih kot velikih projektih ter v združljivosti s številnimi obstoječimi sistemi in protokoli.
 
+## **Git rebase**
 
-    
+To je postopek premikanja ali združevanja zaporedja commitov v novi base commit. Rebasing je najbolj uporabno in enostavno vizualiziran v kontekstu branchov. Proces si lahko tako:
+
+![Kako deluje rebase](Slike/Git_rebasing.png)
