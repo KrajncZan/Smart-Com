@@ -21,3 +21,13 @@ Container je standardna enota programske opreme, ki pakira kodo in vse njene odv
 - ***Loghtweight***: containerji si delijo OS kernel stroja in zato ne potrebujejo operacijskega sistema za aplikacijo, kar spodbuja večjo učinkovitost serverja ter zmanjšuje stroške serverja in licenc
 
 - ***Secure***: aplikacije so varnejše v containerjih in Docker zagotavlja najmočnejše privzete izolacijske zmogljivosti v industriji
+
+## **Multistage build**
+
+Ena najzahtevnejših stvari pri ustvarjanju imagov je zmanjševanje njihovih velikosti. Vsako navodilo RUN, COPY in ADD v datoteki Dockerfile sliki doda plast in ne pozabite počistiti vseh artefaktov, ki jih ne potrebujete, preden se premaknete na naslednji layer. Če želite napisati res učinkovito datoteko Dockerfile, ste tradicionalno morali uporabljati različne trike v shellu in drugo logiko, da so layerji čim manjše in da zagotovite, da ima vsaka plast artefakte, ki jih potrebuje iz prejšnjega layerja, in nič drugega.
+
+Pri multistage buildu uporabimo več FROM stavkov v datoteki Dockerfile. Vsako navodilo FROM lahko uporablja drugačno osnovo in vsako od njih začne novo stopnjo gradnje. Artefakte lahko selektivno kopirate iz ene stopnje v drugo in pustimo za seboj vse, česar ne želite na končnemu imagu.
+
+Ubistvu iz prvega imaga vzamemo samo pomembne stvari kot so .exe datoreka ipd., in jih preselimo v nov image, ki ima manjši base image.
+
+<img src="Slike/multistage_build.png" width="700" alt="Kako deluje multistage build">
