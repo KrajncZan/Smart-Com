@@ -14,7 +14,7 @@ import time,logging,sys
 client_id="testclient2"
 mqttv=mqtt.MQTTv5
 messages=[]
-host = '192.168.1.41'
+host = 'localhost'
 port=1883
 pub_topic="test"
 

@@ -11,7 +11,7 @@ def CNAME():
         print('CNAME target address:', cnameval.target)
 
 def MX():
-    result = dns.resolver.resolve('mail.google.com', 'MX')
+    result = dns.resolver.resolve('mail.google.com', 'NS')
     #print(result)
     for exdata in result:
         print('MX Record:', exdata.to_text())
@@ -19,4 +19,4 @@ A()
 print("-" * 20)
 CNAME()
 print("-" * 20)
-MX()
+#MX()
