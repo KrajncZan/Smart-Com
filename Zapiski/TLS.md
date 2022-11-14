@@ -6,7 +6,7 @@ Je široko sprejet varnostni protokol, zasnovan za zagotavljanje zasebnosti in v
 
 HTTPS je implementacija TLS-ja na protokol HTTP, ki ga uporabljajo vsa spletna mesta in tudi nekatere druge spletne storitve. Vsako spletno mesto, ki uporablja HTTPS, torej uporablja šifriranje TLS.
 
-## **Kaj TLS dela**
+## **Kaj dela TLS**
 
 Protokol TLS ima tri glavne komponente: šifriranje, avtentikacijo in preverjanje integritete.
 
