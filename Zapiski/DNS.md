@@ -32,7 +32,7 @@ Pri tipičnem iskanju DNS se pojavijo tri vrste queryjev. Z uporabo kombinacije 
 
 - **Recursive query** - V rekurzivnem queryju DNS recursor zahteva, da server DNS (običajno rekurzivni resolver) odjemalcu odgovori z zahtevanim zapisom vira ali error-jem, če resolver ne najde zapisa.
 - **Iterative query** - V tej situaciji bo odjemalec DNS serverju omogočil, da vrne najboljši odgovor, ki ga lahko. Če poizvedovani strežnik DNS nima ujemanja z imenom poizvedbe, bo vrnil napotitev na strežnik DNS, ki je avtoritateten za nižjo raven imenskega prostora domene. Odjemalec DNS bo nato izvedel query na referenčni naslov. Ta postopek se nadaljuje z dodatnimi strežniki DNS po verigi poizvedb, dokler ne pride do napake ali časovne omejitve.
-- Non-recursive query - običajno se to zgodi, ko odjemalec DNS resolver querry-ja DNS server za zapis, do katerega ima dostop bodisi zato, ker je avtoritateten za zapis bodisi ker zapis obstaja v njegovem predpomnilniku. Običajno bo strežnik DNS cashe-jal zapise DNS, da prepreči dodatno porabo bandwidtha in obremenitev na zgornjih serverjih.
+- **Non-recursive query** - običajno se to zgodi, ko odjemalec DNS resolver querry-ja DNS server za zapis, do katerega ima dostop bodisi zato, ker je avtoritateten za zapis bodisi ker zapis obstaja v njegovem predpomnilniku. Običajno bo strežnik DNS cashe-jal zapise DNS, da prepreči dodatno porabo bandwidtha in obremenitev na zgornjih serverjih.
 
 
 ## **DNS caching**
